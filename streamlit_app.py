@@ -18,8 +18,8 @@ xtrain, xtest, ytrain, ytest = train_test_split(x,y,random_state=42, test_size=0
 st.write('''## Data(set)''')
 st.write('''This project uses [brest cancer dataset](https://www.kaggle.com/datasets/ahmedesso/brest-cancer) in kaggle. This dataset contains the data of pacent and dignosis report so that we can predict the cancer chances.''')
 st.write('''- Total rows(data):''', len(df))
-st.write('''- Malignant:''', len(y[1]))
-st.write('''- Benign:''', len(y[-1]))
+st.write('''- Malignant:''', np.sum(y==1))
+st.write('''- Benign:''', np.sum(y==-1))
 st.write('''- Training sample:''', len(xtrain))
 st.write('''- Testing sample:''', len(xtest))
 
