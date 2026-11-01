@@ -17,4 +17,13 @@ This project was made by me to understand SVM from scratch so it has SVM applied
 - SVM from scratch
 - diagnosis for brest cancer
 
+## Tech-Stack
+
+This project uses python liberies used for data science - Visulization, calculation and data manipulation. I've used:
+
+- Numpy for calculation
+- Streamlit for data visulization and preview
+- Pandas for data manipulation
+- sk-learn for accuracy calculation and datasplit.
+
 
