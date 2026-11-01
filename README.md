@@ -6,3 +6,8 @@ In this project I have applied SVM from scratch in [Brest cancer](https://www.ka
 
 THis is the loss accuracy graph of the algorithm in each epch(training loop). You can see the web preview through this [link](https://svm-brest-cancer.streamlit.app/).
 
+## Small intro to SVM
+
+SVM is a supervised regression bahsed classification meachine learning model which uses support vectors and decision line to classify data. The decision line shaprate the data into two parts.
+
+
