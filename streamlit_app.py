@@ -35,6 +35,7 @@ def train(x,y,a):
 	if yhat(x)*z(x)<1 or yhat(x)!=y:
 		w-= a*weight
 		b -= a*bias
+st.write('''## Loss and Accuracy''')
 
 lossandacc = st.empty()
 lossacc = {"loss":[], "acc":[]}
