@@ -2,6 +2,7 @@ import streamlit as st
 import kagglehub
 import pandas as pd
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
 import numpy as np
 
 path = kagglehub.dataset_download("ahmedesso/brest-cancer", "data.csv")
@@ -35,4 +36,11 @@ def train(x,y,a):
 		w-= a*weight
 		b -= a*bias
 
+lossandacc = st.empty()
+lossacc = {"loss":[], "acc":[]}
 
+for i in range(100):
+	xtrain.apply(lambda x: train(x,ytrain.loc[x.name], 0.0001), axis=1)
+	lossacc["loss"].append(sum(xtest.apply(lambda x:hloss(x), axis=1))/len(xtest))
+	lossacc["acc"].append(accuracy_score(xtest.apply(lambda x:yhat(x), axis=1), ytest))
+	lossandacc.line_chart(pd.DataFrame(lossacc))
