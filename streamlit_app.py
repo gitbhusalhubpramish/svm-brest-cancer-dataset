@@ -23,6 +23,10 @@ st.write('''- Benign:''', np.sum(y==-1))
 st.write('''- Training sample:''', len(xtrain))
 st.write('''- Testing sample:''', len(xtest))
 
+st.write('''## Algorithm''')
+st.write('''This uses SVM to predict the dignosis. It draws a stright line through feature and shaprate in left and right''')
+
+
 np.random.seed(42)
 w=np.random.rand(len(x.columns))*10
 b = np.random.rand()*10
