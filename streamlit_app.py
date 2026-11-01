@@ -24,7 +24,7 @@ st.write('''- Training sample:''', len(xtrain))
 st.write('''- Testing sample:''', len(xtest))
 
 st.write('''## Algorithm''')
-st.write('''This uses SVM to predict the dignosis. It draws a stright line through feature and shaprate in left and right''')
+st.write('''This uses SVM to predict the dignosis. It draws a stright line through feature and shaprate in left and right. It's main goal is to maximize the margin(distance between line and datapoint).''')
 
 
 np.random.seed(42)
@@ -48,6 +48,13 @@ def train(x,y,a):
 		w-= a*weight
 		b -= a*bias
 st.write('''## Loss and Accuracy''')
+
+st.write('''Here loss can be simply defined as how near the data is from decision line and mismatch. but:''')
+st.markdown(r'''$$
+loss = max(0, 1-yz)
+$$''')
+st.markdown(r'''- $y$ is the true data''')
+st.markdown(r'''- $z$ is the predicted data''')
 
 lossandacc = st.empty()
 lossacc = {"loss":[], "acc":[]}
