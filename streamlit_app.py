@@ -42,5 +42,5 @@ lossacc = {"loss":[], "acc":[]}
 for i in range(100):
 	xtrain.apply(lambda x: train(x,ytrain.loc[x.name], 0.0001), axis=1)
 	lossacc["loss"].append(sum(xtest.apply(lambda x:hloss(x), axis=1))/len(xtest))
-	lossacc["acc"].append(accuracy_score(xtest.apply(lambda x:yhat(x), axis=1), ytest))
+	lossacc["acc"].append(accuracy_score(xtest.apply(lambda x:yhat(x), axis=1), ytest)*100)
 	lossandacc.line_chart(pd.DataFrame(lossacc))
