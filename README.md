@@ -51,4 +51,6 @@ I had made this project to learn SVM form scratch. Of cource I had learnt this:)
 - calcus
 - data visulizaton and plotting
 
+## Some extra info...
 
+I have been learning Meachine Learning from scratch so I make notes and make at least one project for each. I have writtern a jupiter notebook to plan andmake this work then I make a python script file with the help of streamlit so that I can host and support hackclub. Most of the progress of learning the algorithm is in my notebook(coding time only) while I struggle a lot to research too. I made this to learn so it has very less AI implimented.
