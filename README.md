@@ -26,4 +26,29 @@ This project uses python liberies used for data science - Visulization, calculat
 - Pandas for data manipulation
 - sk-learn for accuracy calculation and datasplit.
 
+## Work-flow
+
+The work flow of the project looks like this:
+
+- **Fetch data:** Here the data is fetched from kaggle dataset.
+- **Data shepration:** Here the algorithm sheprate the data into 2(4) parts for training and test for each with x and y.
+- **Parameter initlization:** Here the model's parameter is initlized random
+- **Training:** Here the greadient is calculated and the parameter are updated accordingly by greadient decent:
+
+$$
+w = w - \eta \frac{\partial L}{\partial w}
+$$
+
+- **Loss calculation:** This is done just to see how model is learning the graph in the preview is teh loss and accuracy graph for each step(epoh).
+- **repeat:** repeat to train and calcuate error multiple times(epoch)
+
+## So, What did I learn?
+
+I had made this project to learn SVM form scratch. Of cource I had learnt this:) but other stuff like:
+
+- SVM
+- Hudge loss
+- calcus
+- data visulizaton and plotting
+
 
