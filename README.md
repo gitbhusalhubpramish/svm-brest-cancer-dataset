@@ -10,4 +10,11 @@ THis is the loss accuracy graph of the algorithm in each epch(training loop). Yo
 
 SVM is a supervised regression bahsed classification meachine learning model which uses support vectors and decision line to classify data. The decision line shaprate the data into two parts.
 
+## Feature
+
+This project was made by me to understand SVM from scratch so it has SVM applied from scratch on the dataset. But also:
+
+- SVM from scratch
+- diagnosis for brest cancer
+
 
