@@ -27,4 +27,12 @@ hloss = lambda d: max(0,1-y.loc[d.name]*z(np.array(d)))
 dw = lambda x,y: np.array(y*-x)
 db = lambda x,y: -y
 
+def train(x,y,a):
+	global w,b
+	weight = dw(x,y)
+	bias = db(x,y)
+	if yhat(x)*z(x)<1 or yhat(x)!=y:
+		w-= a*weight
+		b -= a*bias
+
 
