@@ -1,0 +1,8 @@
+# Brest cancer with SVM
+
+In this project I have applied SVM from scratch in [Brest cancer](https://www.kaggle.com/datasets/ahmedesso/brest-cancer) dataset in kaggle. This markdown is jus the preview of the project and how I made this. I have given more details in my [notes](https://github.com/gitbhusalhubpramish/ml-notes/tree/main/0.006%20SVM)about SVM.
+
+<img src="visual.jpg"/>
+
+THis is the loss accuracy graph of the algorithm in each epch(training loop). You can see the web preview through this [link](https://svm-brest-cancer.streamlit.app/).
+
