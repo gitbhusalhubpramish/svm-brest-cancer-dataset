@@ -9,7 +9,7 @@ df = pd.read_csv(path)
 
 df["diagnosis"] = df["diagnosis"].map({"M":1, "B":-1})
 
-x = df.drop(["diagnosis", "Unnamed: 32", id], axis=1)
+x = df.drop(["diagnosis", "Unnamed: 32", "id"], axis=1)
 y = df["diagnosis"]
 
 xtrain, xtest, ytrain, ytest = train_text_split(x,y,random_state=42, test_size=0.2)
