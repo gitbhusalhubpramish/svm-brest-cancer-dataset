@@ -2,6 +2,7 @@ import streamlit as st
 import kagglehub
 import pandas as pd
 from sklearn.model_selection import train_test_split
+import numpy as np
 
 path = kagglehub.dataset_download("ahmedesso/brest-cancer", "data.csv")
 df = pd.read_csv(path)
