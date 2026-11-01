@@ -18,3 +18,13 @@ np.random.seed(42)
 w=np.random.rand(len(x.columns))*10
 b = np.random.rand()*10
 
+z = lambda x: w.T@x+b
+
+yhat = lambda x: (1 if z(x)>0 else -1)
+
+hloss = lambda d: max(0,1-y.loc[d.name]*z(np.array(d)))
+
+dw = lambda x,y: np.array(y*-x)
+db = lambda x,y: -y
+
+
